@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__logo">
+                    <img class="logo__icon" src="img/KEV-monogram-from-MakeMonogram.com-1679567486.svg" alt="">
+                    <div class="logo__name">
+                        <span class="blast">K</span>
+                        <span class="blast">R</span>
+                        <span class="blast">I</span>
+                        <span class="blast">V</span>
+                        <span class="blast">O</span>
+                        <span class="blast">S</span>
+                        <span class="blast">H</span>
+                        <span class="blast">A</span>
+                        <span class="blast">P</span>
+                        <span class="blast">O</span>
+                        <span class="blast">V</span>
+                        <span class="blast">A</span>
+                        <span class="blast">E</span>
+                        <span class="blast">L</span>
+                        <span class="blast">I</span>
+                        <span class="blast">Z</span>
+                        <span class="blast">A</span>
+                        <span class="blast">V</span>
+                        <span class="blast">E</span>
+                        <span class="blast">T</span>
+                        <span class="blast">A</span>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <ul class="list">
+                        <li><a class="list__link" href="#about">Обо мне</a> </li>
+                        <li><a class="list__link" href="#portfolio">Портфолио</a> </li>
+                        <li><a class="list__link" href="#contacts">Контакты</a> </li>
+                    </ul>
+                </nav>
+                <div class="top-nav">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                      <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                      <li><a class="list__link" href="#about" onclick="closeMenu()">Обо мне</a></li>
+                      <li><a class="list__link" href="#portfolio" onclick="closeMenu()">Портфолио</a></li>
+                      <li><a class="list__link" href="#contacts" onclick="closeMenu()">Контакты</a></li>
+                    </ul>
+                  </div>
+            </header>
+            <div class="social">
+                <ul class="social__icons">
+                    <li><a href="https://vk.com/elizaveta_tarasova98" target="_blank"><i class="fa-vk"><img src="img/vk-logo-svgrepo-com.svg" alt=""></i></a></li>
+                    <li><a href="https://wa.me/89524149454" target="_blank"><i class="fa-whatsapp"><img src="img/whatsapp-svgrepo-com (1).svg" alt=""></i></a></li>
+                    <li><a href="https://github.com/lizavetta98" target="_blank"><i class="fa-git"><img src="img/github-svgrepo-com.svg" alt=""></i></a></li>
+                    <li><a href="https://instagram.com/elizavetka_tarasova_98?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-inst"><img src="img/instagram-svgrepo-com.svg" alt=""></i></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <section class="content__titul" id="titul">
+                    <img class="titul__foto" src="img/foto1.jpg" alt="">
+                    <div class="titul__text">
+                        <p class="text__title">CREATIVE</p>
+                        <p class="text__title text__title_small">DEVELOPER</p>
+                        <p class="text__subtitle">SENSIBLE TO FRONTEND</p>
+                    </div>
+                </section>
+                <section id="about" class="content__about">
+                    <div class="about__conteiner">
+                        <div class="conteiner__title">I AM A FRONTEND DEVELOPER</div>
+                        <div class="conteiner__text">Развиваюсь в сфере веб-разработки уже более года и за это время смогла получить уверенные знания для создания визуальной составляющей сайтов, а так же могу сделать сайт отзывчивым и динамически интересным для пользователей. </div>
+                        <div class="conteiner__skills">
+                            <div class="skills__item">
+                                <div class="item__persent">80%</div>
+                                <div class="item__flexbox">
+                                    <div class="progress"></div>
+                                    <div class="text">HTML</div>
+                                </div>
+                            </div>
+                            <div class="skills__item">
+                                <div class="item__persent">75%</div>
+                                <div class="item__flexbox">
+                                    <div class="progress progress_css"></div>
+                                    <div class="text">CSS</div>
+                                </div>
+                            </div>
+                            <div class="skills__item">
+                                <div class="item__persent">95%</div>
+                                <div class="item__flexbox">
+                                    <div class="progress progress_bem"></div>
+                                    <div class="text">BEM</div>
+                                </div>
+                            </div>
+                            <div class="skills__item">
+                                <div class="item__persent">30%</div>
+                                <div class="item__flexbox">
+                                    <div class="progress progress_js"></div>
+                                    <div class="text">JAVASCRIPT</div>
+                                </div>
+                            </div>
+                            <div class="skills__item">
+                                <div class="item__persent">1% (на этапе изучения)</div>
+                                <div class="item__flexbox">
+                                    <div class="progress progress_react"></div>
+                                    <div class="text">REACT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="about__foto" src="img/foto5.jpg" alt="">
+                </section>
+                <section id="portfolio" class="content__portfolio">
+                    <div class="portfolio__conteiner">
+                        <div class="conteiner__item"data-src="https://weddingkrivoshapovs.netlify.app/"><span>Wedding Day</span></div>
+                        <div class="conteiner__item" data-src="https://lizavetta98.github.io/Explorer/"><span>Explorer</span></div>
+                        <div class="conteiner__item" data-src="https://lizavetta98.github.io/slider/"><span>Slider</span></div>
+                        <div class="conteiner__item" data-src="https://lizavetta98.github.io/Dinamic-color/"><span>Dinamic color</span></div>
+                        <div class="conteiner__item" data-src="https://lizavetta98.github.io/Game/"><span>Game</span></div>
+                        <div class="conteiner__item" data-src="https://lizavetta98.github.io/Color-selection/"><span>Color selection</span></div>
+                    </div>
+                    <div id="modal" class="modal">
+                        <div class="modal__content">
+                          <span class="modal__close">&times;</span>
+                          <iframe class="iframe" src=""></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="contacts" class="content__connection">
+                    <div class="contacts">
+                        <div class="contacts__info">
+                            <div class="info__title">CONTACT WITH ME</div>
+                            <div class="info__item">
+                                <img class="item__icon" src="img/email.svg" alt="">
+                                <div class="item__text">lizra300898@gmail.com</div>
+                            </div>
+                            <div class="info__item">
+                                <img class="item__icon" src="img/трубка.svg" alt="">
+                                <div class="item__text">+7 952 414 94 54</div>
+                            </div>
+                            <div class="info__item">
+                                <img class="item__icon" src="img/место.svg" alt="">
+                                <div class="item__text">Shelcovo, Russia</div>
+                            </div>
+                        </div>
+                        <form class="contacts__form" id="form" name="contact" data-netlify="true">
+                            <input type="text" class="form__email" id="email" placeholder="E-mail" name="email">
+                            <input type="text" class="form__name" id="name" placeholder="Name" name="name">
+                            <textarea type="text" class="form__message" id="textarea" placeholder="Message" name="message"></textarea>
+                            <button class="form__button" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="scroll">
+                <a class="scrol__btn" href="#contacts">scroll down</a>
+                <div class="scroll__img"><img src="img/стрелка.svg" alt=""></div>
+            </div>
+            <div class="scroll scroll_up">
+                <div class="scroll__img scroll__img_up"><img class="up" src="img/стрелка.svg" alt=""></div>
+                <a class="scrol__btn scrol__btn_up" href="#titul">scroll up</a>
+            </div>
+        </div>   
+    </body>
+    <script src="app.js"></script>
+</html>
