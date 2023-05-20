@@ -1,27 +1,3 @@
-//анимация имени
-
-document.querySelectorAll('.blast').forEach(el => {
-  el.addEventListener('mouseenter', function() {
-    el.classList.add('rubberName', 'animated');
-    setTimeout(() => {
-      el.classList.remove('rubberName', 'animated')
-    }, 1000)
-  })
-})
-
-//анимация соцсетей
-
-document.addEventListener("mousemove", (parallax) => {
-  document.querySelectorAll(".parallax").forEach((el) => {
-    const speed = el.getAttribute("data-speed");
-
-    const x = (window.innerWidth - e.pageX * speed) / 100;
-    const y = (window.innerHeight - e.pageY * speed) / 100;
-
-    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-  });
-});
-
 // модальное окно
 
 let el = document.querySelectorAll('.conteiner__item')
