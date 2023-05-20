@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 .header {
@@ -450,6 +451,7 @@ section {
   position: relative;
   border-radius: 30px;
 }
+
 .iframe {
   width: 100%;
   height: 100%;
@@ -466,6 +468,7 @@ section {
 .modal--open {
   display: flex;
 }
+
 
 
 .content__connection {
@@ -719,6 +722,7 @@ textarea::placeholder {
   }
   .about__conteiner {
     margin-left: 2.5%;
+    width: 75%;
   }
   .conteiner__text {
     font-size: 1.2vw;
@@ -726,9 +730,61 @@ textarea::placeholder {
   .conteiner__title {
     font-size: 2.1vw;
   }
+  .modal__content {
+    animation: modal-animation 0.7s;
+  }
+  @keyframes modal-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    60% {
+      transform: scale(0.9);
+    }
+    70% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(0.9);
+    }
+    90% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
-@media (orientation: portrait) and (max-width: 1600px) {
+@media (orientation: landscape) and (max-width: 991px) {
+  .titul__foto {
+    width: 40%;
+    margin-left: 15%;
+  }
+  .about__conteiner {
+    margin-left: 3.5%;
+    width: 75%;
+  }
+  .conteiner__text {
+    font-size: 1.2vw;
+    margin-bottom: 4%;
+  }
+  .conteiner__title {
+    font-size: 2vw;
+  }
+  .conteiner__skills {
+    gap: 1.2vw;
+  } 
+  .about__foto {
+    margin-left: 3%;
+    border-radius: 50%;
+    width: 35%;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1280px) {
   
   .header__menu {
   display: none;
@@ -879,6 +935,30 @@ textarea::placeholder {
   .modal__content {
     width: 90vw;
     height: 62%;
+    animation: modal-animation 0.7s;
+  }
+  @keyframes modal-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    60% {
+      transform: scale(0.9);
+    }
+    70% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(0.9);
+    }
+    90% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .modal__close {
     right: 3.5vw;
@@ -973,6 +1053,5 @@ textarea::placeholder {
   .modal__content {
     width: 90vw;
     height: 90%;
+  }
 }
-}
-
